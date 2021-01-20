@@ -65,7 +65,7 @@ function filterSpaceXData(aSpaceX,filterFlag){
 	element.childNodes[2].childNodes[0].appendChild(document.createElement("strong"));
 	element.childNodes[2].childNodes[0].childNodes[0].innerText = "Mission Ids:"
 	//element.childNodes[2].appendChild(document.createElement("span"));
-	element.childNodes[2].appendChild(document.createElement("ul"));
+	//element.childNodes[2].appendChild(document.createElement("ul"));
 	element.childNodes[2].appendChild(document.createElement("li"));
 	element.childNodes[2].childNodes[1].innerText=aSpaceX[i].mission_id;
 	
