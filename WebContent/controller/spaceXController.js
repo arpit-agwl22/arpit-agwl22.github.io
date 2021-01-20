@@ -1,6 +1,7 @@
 var xmlhttp = new XMLHttpRequest();
 var url = "https://api.spaceXdata.com/v3/launches?limit=100";
 let spaceXdata;
+let filterVal1, filterVal2, filterVal3
 xmlhttp.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
      spaceXdata = JSON.parse(this.responseText);
