@@ -23,7 +23,7 @@ function loadSpaceXData(arr,flag) {
 						launch_year:  arr[i].launch_year,
 						succ_launch:  arr[i].launch_success,
 						succ_landing: arr[i].rocket.first_stage.cores[0].succ_landing,
-						id: arr[i].rocket.first_stage.cores[0].flight_number,
+						id: arr[i].flight_number,
 					}
 					aSpaceX.push(oSpaceX);
 	}
