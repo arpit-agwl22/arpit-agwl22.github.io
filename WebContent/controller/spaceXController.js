@@ -54,8 +54,7 @@ function filterSpaceXData(aSpaceX,filterFlag){
 	element.childNodes[1].setAttribute("class","name")
 	element.childNodes[1].appendChild(document.createElement("strong"));
 	element.childNodes[1].childNodes[0].innerText = aSpaceX[i].mission_name;
-	element.childNodes[1].appendChild(document.createElement("span"))
-	element.childNodes[1].childNodes[0].innerText = aSpaceX[i].flight_number;
+	
 	
 		
 	element.appendChild(document.createElement("div"))
@@ -65,7 +64,6 @@ function filterSpaceXData(aSpaceX,filterFlag){
 	element.childNodes[2].childNodes[0].appendChild(document.createElement("strong"));
 	element.childNodes[2].childNodes[0].childNodes[0].innerText = "Mission Ids:"
 	//element.childNodes[2].appendChild(document.createElement("span"));
-	element.childNodes[2].appendChild(document.createElement("ul"));
 	element.childNodes[2].appendChild(document.createElement("li"));
 	element.childNodes[2].childNodes[1].innerText=aSpaceX[i].mission_id;
 	
