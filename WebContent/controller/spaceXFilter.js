@@ -1,6 +1,5 @@
-let filterVal1, filterVal2, filterVal3;
 function onClickYear(data){
-	filterVal1 = event.target.innerText; 	
+	let filterVal = event.target.innerText; 	
 	var xmlhttp = new XMLHttpRequest();
 	var url = "https://api.spaceXdata.com/v3/launches?limit=100&launch_year="+filterVal.toLowerCase() ;
 	let spaceXdata;
@@ -15,7 +14,7 @@ function onClickYear(data){
 };
 
 function onClickLaunch(){
-	filterVal2 = event.target.innerText; 	
+	let filterVal = event.target.innerText; 	
 	var xmlhttp = new XMLHttpRequest();
 	var url = "https://api.spaceXdata.com/v3/launches?limit=100&launch_success="+filterVal.toLowerCase() ;
 	let spaceXdata;
@@ -31,7 +30,7 @@ function onClickLaunch(){
 };
 
 function onClickLand(){
-	filterVal3 = event.target.innerText; 	
+	let filterVal = event.target.innerText; 	
 	var xmlhttp = new XMLHttpRequest();
 	var url = "https://api.spaceXdata.com/v3/launches?limit=100&land_success="+filterVal.toLowerCase() ;
 	let spaceXdata;
