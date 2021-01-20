@@ -23,6 +23,7 @@ function loadSpaceXData(arr,flag) {
 						launch_year:  arr[i].launch_year,
 						succ_launch:  arr[i].launch_success,
 						succ_landing: arr[i].rocket.first_stage.cores[0].succ_landing,
+						id: arr[i].rocket.first_stage.cores[0].flight_number,
 					}
 					aSpaceX.push(oSpaceX);
 	}
@@ -53,7 +54,7 @@ function filterSpaceXData(aSpaceX,filterFlag){
 	element.appendChild(document.createElement("div"))
 	element.childNodes[1].setAttribute("class","name")
 	element.childNodes[1].appendChild(document.createElement("strong"));
-	element.childNodes[1].childNodes[0].innerText = aSpaceX[i].mission_name + "#" +  aSpaceX[i].flight_number
+	element.childNodes[1].childNodes[0].innerText = aSpaceX[i].mission_name + " # " +  aSpaceX[i].id
 	
 		
 	element.appendChild(document.createElement("div"))
